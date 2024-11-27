@@ -1,0 +1,117 @@
+uuid: a1d1cc6b-3fa1-482f-955a-900ed9260a98
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parques_de_diversao.body
+    - field.field.node.parques_de_diversao.field_datas_disponiveis_parque
+    - field.field.node.parques_de_diversao.field_image
+    - field.field.node.parques_de_diversao.field_publico_alvo
+    - field.field.node.parques_de_diversao.field_regiao
+    - field.field.node.parques_de_diversao.field_tipo_de_experiencia
+    - field.field.node.parques_de_diversao.field_video_do_parque_de_diverso
+    - image.style.medium
+    - node.type.parques_de_diversao
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          23571752-e93c-4bf1-9fa7-8cc172bac6a3:
+            uuid: 23571752-e93c-4bf1-9fa7-8cc172bac6a3
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          454f9d32-addf-4175-8b36-5562a178b364:
+            uuid: 454f9d32-addf-4175-8b36-5562a178b364
+            region: content
+            configuration:
+              id: 'extra_field_block:node:parques_de_diversao:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          dbbc5864-9a43-41e0-9b45-0a1d73768cbd:
+            uuid: dbbc5864-9a43-41e0-9b45-0a1d73768cbd
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.parques_de_diversao.teaser
+targetEntityType: node
+bundle: parques_de_diversao
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_datas_disponiveis_parque: true
+  field_publico_alvo: true
+  field_regiao: true
+  field_tipo_de_experiencia: true
+  field_video_do_parque_de_diverso: true
+  langcode: true

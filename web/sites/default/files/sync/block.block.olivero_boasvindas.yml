@@ -1,0 +1,30 @@
+uuid: dd7bf063-6f2a-4afb-9889-af53c6db15bd
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8295c608-bb9e-4f27-b5be-19efc00ddee4'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_boasvindas
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:8295c608-bb9e-4f27-b5be-19efc00ddee4'
+settings:
+  id: 'block_content:8295c608-bb9e-4f27-b5be-19efc00ddee4'
+  label: 'Boas-vindas '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

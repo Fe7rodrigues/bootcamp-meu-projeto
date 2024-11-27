@@ -1,0 +1,29 @@
+uuid: 412d2d37-e0e4-4ab7-b216-ac1f6efabfe3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regiao
+    - node.type.parques_de_diversao
+    - taxonomy.vocabulary.locais
+id: node.parques_de_diversao.field_regiao
+field_name: field_regiao
+entity_type: node
+bundle: parques_de_diversao
+label: Região
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      locais: locais
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

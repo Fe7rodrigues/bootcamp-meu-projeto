@@ -1,0 +1,9 @@
+uuid: 416a9ad9-eda0-4c0f-8d13-1ba366c68cca
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Locais
+vid: locais
+description: null
+weight: 0
+new_revision: false

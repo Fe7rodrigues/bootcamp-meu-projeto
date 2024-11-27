@@ -1,0 +1,11 @@
+uuid: faf22595-ffa8-4fa8-966f-d6ab3fff3b4d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.token
+label: Token
+description: null
+targetEntityType: taxonomy_term
+cache: true

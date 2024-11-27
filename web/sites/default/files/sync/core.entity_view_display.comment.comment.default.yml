@@ -1,0 +1,72 @@
+uuid: 85931b6f-1dbb-4013-8eac-0c03c7de23ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.comment_body
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          38df893a-7f54-43b5-a85d-e1b4c420ec2a:
+            uuid: 38df893a-7f54-43b5-a85d-e1b4c420ec2a
+            region: content
+            configuration:
+              id: 'field_block:comment:comment:comment_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          46c4c5ad-4be5-4265-865f-94fbaa4e245b:
+            uuid: 46c4c5ad-4be5-4265-865f-94fbaa4e245b
+            region: content
+            configuration:
+              id: 'extra_field_block:comment:comment:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: aBQUGsQ46M4048fIlFuTXwl2zV0j2cJX89CTUobh9hA
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

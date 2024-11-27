@@ -1,0 +1,11 @@
+uuid: 8e6945f7-97f1-4334-91f4-1f423ed4c614
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_experiencia
+id: taxonomy_term.tipo_de_experiencia
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_experiencia
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 1d297738-a4bb-4fef-a52b-e9cc41f3118d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_datas_disponiveis_parque
+field_name: field_datas_disponiveis_parque
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: df993f36-d7f2-4782-b036-a7d4e9362cf2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: cachoeiras
+label: Cachoeiras
+type: 'canonical_entities:node'
+pattern: 'cachoeira/[node:title]'
+selection_criteria:
+  4d45bc17-224c-4f64-aeaa-06153d9396ac:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4d45bc17-224c-4f64-aeaa-06153d9396ac
+    context_mapping:
+      node: node
+    bundles:
+      cachoeira: cachoeira
+selection_logic: and
+weight: -5
+relationships: {  }

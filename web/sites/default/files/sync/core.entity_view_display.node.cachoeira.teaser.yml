@@ -1,0 +1,115 @@
+uuid: 9731b4cb-b84f-47b3-a503-7db4c8b87f2a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cachoeira.body
+    - field.field.node.cachoeira.field_datas_disponiveis
+    - field.field.node.cachoeira.field_dificuldade
+    - field.field.node.cachoeira.field_image
+    - field.field.node.cachoeira.field_regiao
+    - field.field.node.cachoeira.field_video_da_cachoeira
+    - image.style.medium
+    - node.type.cachoeira
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          082f04f6-6eea-4135-9b39-3f417edf850c:
+            uuid: 082f04f6-6eea-4135-9b39-3f417edf850c
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2808e27c-7e9f-4a9f-bb97-ff0d482f8376:
+            uuid: 2808e27c-7e9f-4a9f-bb97-ff0d482f8376
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cachoeira:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          a686ab58-ac47-409b-9e5c-604852d3d49f:
+            uuid: a686ab58-ac47-409b-9e5c-604852d3d49f
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.cachoeira.teaser
+targetEntityType: node
+bundle: cachoeira
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_datas_disponiveis: true
+  field_dificuldade: true
+  field_regiao: true
+  field_video_da_cachoeira: true
+  langcode: true

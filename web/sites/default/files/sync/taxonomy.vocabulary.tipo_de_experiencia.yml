@@ -1,0 +1,9 @@
+uuid: 6a0c9317-3ccc-4c4e-8f3a-09b875eafeee
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Tipo de Experiência'
+vid: tipo_de_experiencia
+description: null
+weight: 0
+new_revision: false

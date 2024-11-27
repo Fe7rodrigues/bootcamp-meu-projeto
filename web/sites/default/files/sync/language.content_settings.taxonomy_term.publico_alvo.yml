@@ -1,0 +1,11 @@
+uuid: cf6308ea-fed1-4201-9de7-3859be0bf864
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publico_alvo
+id: taxonomy_term.publico_alvo
+target_entity_type_id: taxonomy_term
+target_bundle: publico_alvo
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: c6765710-1ab5-478e-9b11-845745b0b1d5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regiao
+    - node.type.cachoeira
+    - taxonomy.vocabulary.locais
+id: node.cachoeira.field_regiao
+field_name: field_regiao
+entity_type: node
+bundle: cachoeira
+label: Região
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      locais: locais
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

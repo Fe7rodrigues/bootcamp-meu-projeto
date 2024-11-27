@@ -1,0 +1,29 @@
+uuid: ff49b2d6-43d2-4212-b7b8-094848b8ce0b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publico_alvo
+    - node.type.parques_de_diversao
+    - taxonomy.vocabulary.publico_alvo
+id: node.parques_de_diversao.field_publico_alvo
+field_name: field_publico_alvo
+entity_type: node
+bundle: parques_de_diversao
+label: Público-alvo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      publico_alvo: publico_alvo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

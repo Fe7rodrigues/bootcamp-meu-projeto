@@ -1,0 +1,20 @@
+uuid: 0ff26160-7161-449f-a070-5154a31326da
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_regiao
+field_name: field_regiao
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
