@@ -88,9 +88,10 @@
 }
 
 .site-branding__logo img {
-  width: auto;
-  max-width: 100%;
-  max-height: var(--sp2);
+  @media (min-width: 43.75rem) {
+        max-height: 1000px; /* Altere para um valor maior */
+        width: auto; /* Mantém a proporção */
+}
 }
 
 @media (min-width: 31.25rem) {

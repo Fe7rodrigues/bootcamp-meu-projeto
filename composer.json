@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.3",
         "drupal/pathauto": "^1.13",
+        "drupal/slick": "^3.0",
         "drupal/token": "^1.15",
         "drush/drush": "^13.3"
     },
