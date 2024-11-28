@@ -1,12 +1,3 @@
-import os
-import shutil
-
-# Criação do diretório do projeto
-project_dir = "/mnt/data/meu-projeto"
-os.makedirs(project_dir, exist_ok=True)
-
-# Conteúdo do README.md
-readme_content = """
 # Projeto Drupal - Guia para Configuração e Execução
 
 Este projeto foi desenvolvido como parte de um teste prático e segue as melhores práticas para implementação de um site no Drupal. O objetivo é criar um site funcional com recursos específicos detalhados abaixo.
@@ -22,16 +13,18 @@ Este projeto foi desenvolvido como parte de um teste prático e segue as melhore
 ## Instruções para Execução
 
 ### 1. Configuração do Ambiente
+
 1. **Instale o Composer**:
    Siga as instruções em [https://getcomposer.org/](https://getcomposer.org/).
-   
+
 2. **Instale o DDev**:
    Configure o DDev conforme detalhado em [https://ddev.readthedocs.io/](https://ddev.readthedocs.io/).
 
 3. **Clone o Repositório**:
    ```bash
-   git clone [https://github.com/Fe7rodrigues/bootcamp-meu-projeto.git]
-   cd [/meu-projeto]
+   git clone https://github.com/Fe7rodrigues/bootcamp-meu-projeto.git
+   cd meu-projeto
+
 
 *Inicie o Ambiente:*
 
