@@ -1,0 +1,22 @@
+uuid: 1bb87b9c-e644-4a06-8888-942f8abbb0cf
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: parques_de_diversoes
+label: 'Parques de diversões '
+type: 'canonical_entities:node'
+pattern: 'parques/[node:title]'
+selection_criteria:
+  e205c002-a890-45c5-becb-1db8e96fe05c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e205c002-a890-45c5-becb-1db8e96fe05c
+    context_mapping:
+      node: node
+    bundles:
+      parques_de_diversao: parques_de_diversao
+selection_logic: and
+weight: -5
+relationships: {  }

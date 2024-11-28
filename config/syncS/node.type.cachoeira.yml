@@ -1,0 +1,17 @@
+uuid: 0ab775c2-8158-4007-a981-577dfc9deca2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cachoeiras
+type: cachoeira
+description: 'Listagem de cachoeiras'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

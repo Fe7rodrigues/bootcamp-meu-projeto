@@ -1,0 +1,217 @@
+uuid: 349dfdf6-da14-4e8e-bbdb-5aaeab3a253e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.cachoeira.body
+    - field.field.node.cachoeira.field_datas_disponiveis
+    - field.field.node.cachoeira.field_dificuldade
+    - field.field.node.cachoeira.field_image
+    - field.field.node.cachoeira.field_regiao
+    - field.field.node.cachoeira.field_video_da_cachoeira
+    - image.style.wide
+    - node.type.cachoeira
+  module:
+    - datetime
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          5ee5d58a-0c89-4415-a04d-5384549ac3e9:
+            uuid: 5ee5d58a-0c89-4415-a04d-5384549ac3e9
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: eager
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          55a4f544-57e2-4a5c-a8a2-20ff399aa5c4:
+            uuid: 55a4f544-57e2-4a5c-a8a2-20ff399aa5c4
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cachoeira:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          c6cf3a47-0675-4b09-a544-9689fbd981db:
+            uuid: c6cf3a47-0675-4b09-a544-9689fbd981db
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_datas_disponiveis'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          fcc0b220-5ba1-44d4-a6ea-54adf5a59a65:
+            uuid: fcc0b220-5ba1-44d4-a6ea-54adf5a59a65
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_regiao'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          4d5e41c9-8827-443b-a0a8-418c6061d45d:
+            uuid: 4d5e41c9-8827-443b-a0a8-418c6061d45d
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_dificuldade'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          3e0f6a67-57ed-4c13-85eb-a68c7bcc0cca:
+            uuid: 3e0f6a67-57ed-4c13-85eb-a68c7bcc0cca
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:field_video_da_cachoeira'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          e9c48d3e-2804-4462-a773-ccd43e6d69e7:
+            uuid: e9c48d3e-2804-4462-a773-ccd43e6d69e7
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeira:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.cachoeira.default
+targetEntityType: node
+bundle: cachoeira
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_datas_disponiveis:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_dificuldade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_regiao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_video_da_cachoeira:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

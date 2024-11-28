@@ -1,0 +1,24 @@
+uuid: 7f7e4c96-080c-47ab-a29c-1bbafbc7c443
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.parques_de_diversao
+  module:
+    - text
+id: node.parques_de_diversao.body
+field_name: body
+entity_type: node
+bundle: parques_de_diversao
+label: 'Descrição do parque de diversões'
+description: 'Clique na seta para baixo para exibir o calendário de pop-up para seleção mais fácil de data.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

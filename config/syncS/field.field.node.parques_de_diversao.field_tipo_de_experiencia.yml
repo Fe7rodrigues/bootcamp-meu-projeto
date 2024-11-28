@@ -1,0 +1,29 @@
+uuid: 0ab86bec-1272-4b8e-8db8-6cbab02a9b74
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_experiencia
+    - node.type.parques_de_diversao
+    - taxonomy.vocabulary.tipo_de_experiencia
+id: node.parques_de_diversao.field_tipo_de_experiencia
+field_name: field_tipo_de_experiencia
+entity_type: node
+bundle: parques_de_diversao
+label: 'Tipo de Experiência'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_experiencia: tipo_de_experiencia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

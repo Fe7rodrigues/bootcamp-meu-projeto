@@ -1,0 +1,9 @@
+uuid: d5460eab-4284-4f42-a8b1-dbcf03f0063e
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Público-alvo
+vid: publico_alvo
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,18 @@
+uuid: 401049ce-d1ad-489c-9a8f-c20558cfa17a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques_de_diversao
+id: node.parques_de_diversao.title
+field_name: title
+entity_type: node
+bundle: parques_de_diversao
+label: 'Nome do parque de diversões'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

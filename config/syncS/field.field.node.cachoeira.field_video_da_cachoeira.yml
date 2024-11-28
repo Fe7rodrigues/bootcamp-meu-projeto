@@ -1,0 +1,29 @@
+uuid: 9a541785-033a-4a79-83b8-525058bcdfa8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_da_cachoeira
+    - media.type.remote_video
+    - node.type.cachoeira
+id: node.cachoeira.field_video_da_cachoeira
+field_name: field_video_da_cachoeira
+entity_type: node
+bundle: cachoeira
+label: 'Vídeo da cachoeira '
+description: 'Incluir um vídeo demonstrativo da cachoeira.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

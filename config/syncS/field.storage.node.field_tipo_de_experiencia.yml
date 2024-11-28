@@ -1,0 +1,20 @@
+uuid: 9f472da9-d4e9-4291-a2bd-7f0c9b7915c2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_de_experiencia
+field_name: field_tipo_de_experiencia
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
